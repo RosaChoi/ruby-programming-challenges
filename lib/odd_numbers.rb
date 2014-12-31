@@ -6,6 +6,8 @@
 
 class OddNumbers
 
+  attr_reader :max_number
+
   def initialize(max_number)
     @max_number = max_number
   end
