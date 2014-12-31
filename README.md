@@ -1,6 +1,6 @@
-# Temperature Convertor
+# Temperature Converter
 
-Create a simple temperature convertor. It should function like the example below:
+Create a simple temperature converter. It should function like the example below:
 
 Type '1' to convert from Celsius to Fahrenheit or type '2' to convert from Fahrenheit to Celsius.
 
