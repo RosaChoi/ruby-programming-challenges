@@ -9,3 +9,7 @@ Example:
 Enter Celsius Temperature:
 24
 24 degrees Celsius is equal to 75.2 degree Fahrenheit
+
+# Odd Numbers
+
+Write code to print all the odd numbers between 1 and 1337
