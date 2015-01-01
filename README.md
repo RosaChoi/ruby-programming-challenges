@@ -33,3 +33,10 @@ The number is higher than 17.  Guess again
 The number is higher than 18.  Guess again
 19
 You got it in 7 tries
+
+# Simple Ascii Art
+
+Part 1
+Using loops (don't just use a bunch of puts statements!), print out a simple ascii art triangle like the one below:
+
+![](ascii-tree.png)
