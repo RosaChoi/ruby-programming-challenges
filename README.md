@@ -40,3 +40,8 @@ Part 1
 Using loops (don't just use a bunch of puts statements!), print out a simple ascii art triangle like the one below:
 
 ![](ascii-tree.png)
+
+Part 2
+Ask the user for the number of rows and the ascii character that the pyramid should consist of Here's an example:
+
+![](ascii_part2.gif)
