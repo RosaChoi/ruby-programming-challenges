@@ -75,3 +75,19 @@ racecar is a palindrome
 Enter a string:
 internet
 internet is NOT a palindrome
+
+# Screwing with the Array Class
+
+Write the following methods ON the built in Array class:
+
+Say_hello
+nums = [1,2,3]
+nums.say_hello
+#=> "HEY THERE, I'M AN ARRAY! SOMEONE FUCKED WITH MY CODE :("
+
+count_evens
+nums = [2,5,9,15,22,99]
+nums.count_evens
+#=> "HI FRIEND, I AM ARRAY.  I HAVE 2 EVEN NUMBERS.  PRETTY AWESOME YES?  I LOVE YOU GOODBYE"
+
+It must output the above message word for word.
