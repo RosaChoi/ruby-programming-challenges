@@ -57,3 +57,7 @@ em_esrever
 # Prime Numbers
 
 Write a method called prime_printer(max) which takes one integer argument. It should print out all the prime numbers between 0 and the given argument.
+
+# Fibonacci
+
+Write code to print out the first 100 Fibonacci numbers. Read more about the Fibonacci sequence here
