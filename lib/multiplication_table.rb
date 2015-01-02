@@ -1,23 +1,37 @@
-puts "A multiplication table:"
+class MultiplicationTable
 
-def table_axis
-  start_number = 1
-  end_number = 9
-
-  (start_number..end_number).each do |number|
-    print "   #{number}   "
-    number +=1
-  end
-  print "\n" *2
-
-
-  (start_number..end_number).each do |number|
-    puts " #{number}|"
-    number +=1
+  def initialize(rows, columns)
+    @rows = rows
+    @columns = columns
   end
 
+  def generate
+    puts "A multiplication table:"
+    table_headings
 
+    row_range = (1..@rows)
+    column_range = (1..@columns)
+
+      row_range.each do |row|
+        print "#{row}|"
+        column_range.each do |column|
+          print " #{column * row}  \t"
+        end
+        print "\n"
+      end
+
+  end
+
+  def table_headings
+    number = 1
+
+    (number..@columns).each do |column|
+      print " #{column} \t"
+      column +=1
+    end
+    print "\n" *2
+  end
 
 end
 
-table_axis
+MultiplicationTable.new(9,9).generate
