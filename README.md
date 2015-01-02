@@ -53,3 +53,7 @@ Reverse a string in place. In other words, do not create a new string or use oth
 Enter a string:
   reverse_me
 em_esrever
+
+# Prime Numbers
+
+Write a method called prime_printer(max) which takes one integer argument. It should print out all the prime numbers between 0 and the given argument.
