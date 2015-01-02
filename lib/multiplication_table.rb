@@ -1,12 +1,14 @@
 class MultiplicationTable
 
-  def initialize(rows, columns)
-    @rows = rows
-    @columns = columns
+  def initialize
+    puts "Enter the size of the multiplication table: \nrows:"
+    @rows = gets.chomp.to_i
+    puts "columns:"
+    @columns = gets.chomp.to_i
   end
 
   def generate
-    puts "A multiplication table:"
+    puts "\nA multiplication table:"
     table_headings
 
     row_range = (1..@rows)
@@ -34,4 +36,4 @@ class MultiplicationTable
 
 end
 
-MultiplicationTable.new(9,9).generate
+MultiplicationTable.new.generate
