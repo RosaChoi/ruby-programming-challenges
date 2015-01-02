@@ -44,7 +44,7 @@ Using loops (don't just use a bunch of puts statements!), print out a simple asc
 Part 2
 Ask the user for the number of rows and the ascii character that the pyramid should consist of Here's an example:
 
-![](ascii-part2.gif)
+![](ascii_part2.gif)
 
 # Reverse A String
 
@@ -91,3 +91,11 @@ nums.count_evens
 #=> "HI FRIEND, I AM ARRAY.  I HAVE 2 EVEN NUMBERS.  PRETTY AWESOME YES?  I LOVE YOU GOODBYE"
 
 It must output the above message word for word.
+
+# Multiplication Table
+
+Create a 9 x 9 multiplication table like the one below. Make sure to pay attention to spacing! Make it look nice!
+
+![](multi-table.png)
+
+For an extra challenge, allow the user to specify the size of the multiplication table (3 x 10, 5 x 5, etc.)
