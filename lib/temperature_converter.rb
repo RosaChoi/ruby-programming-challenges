@@ -1,39 +1,54 @@
-class TemperatureConverter
-
-  def initialize
-    puts "Type '1' to convert from Celsius to Fahrenheit or type '2' to convert from Fahrenheit to Celsius."
-    @unit_choice = gets.chomp
+class FahrenheitToCelsiusConverter
+  def convert(fahrenheit)
+    (fahrenheit - 32.0) * (5.0/9.0)
   end
 
-  def get_temperature
-    @temp = gets.to_f
+  def from
+    "Fahrenheit"
   end
 
-  def celsius_to_fahrenheit
-    puts "Enter Celsius Temperature:"
-    celsius = get_temperature
-    fahrenheit = celsius * (9.0/5.0) + 32.0
-    puts "#{celsius} degrees Celsius is equal to #{fahrenheit.round(2)} degrees Fahrenheit."
+  def to
+    "Celsius"
   end
-
-  def fahrenheit_to_celsius
-    puts "Enter Fahrenheit Temperature:"
-    fahrenheit = get_temperature
-    celsius = (fahrenheit - 32.0) * (5.0/9.0)
-    puts "#{fahrenheit} degrees Fahrenheit is equal to #{celsius.round(2)} degrees Celsius."
-  end
-
-  def run
-    if @unit_choice == "1"
-      celsius_to_fahrenheit
-    elsif @unit_choice == "2"
-      fahrenheit_to_celsius
-    else
-      puts "Not a valid choice. Please try again."
-    end
-  end
-
 end
 
-converter = TemperatureConverter.new
-converter.run
+class CelsiusToFahrenheitConverter
+  def convert(celsius)
+    celsius * (9.0/5.0) + 32.0
+  end
+
+  def from
+    "Celsius"
+  end
+
+  def to
+    "Fahrenheit"
+  end
+end
+
+def converter_for_input(user_input)
+  if user_input == "1"
+    CelsiusToFahrenheitConverter.new
+  elsif user_input == "2"
+    FahrenheitToCelsiusConverter.new
+  else
+    nil
+  end
+end
+
+def run(converter)
+  puts "Enter #{converter.from} Temperature:"
+  input = gets.to_f
+  result = converter.convert(input).round(2)
+  "#{input} degrees #{converter.from} is equal to #{result} degrees #{converter.to}."
+end
+
+puts "Type '1' to convert from Celsius to Fahrenheit or type '2' to convert from Fahrenheit to Celsius."
+
+converter = converter_for_input(gets.chomp)
+if converter == nil
+  puts "Not a valid choice. Please try again."
+else
+  result = run(converter)
+  puts result
+end
