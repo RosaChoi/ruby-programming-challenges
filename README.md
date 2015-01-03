@@ -99,3 +99,7 @@ Create a 9 x 9 multiplication table like the one below. Make sure to pay attenti
 ![](multi-table.png)
 
 For an extra challenge, allow the user to specify the size of the multiplication table (3 x 10, 5 x 5, etc.)
+
+# Object Oriented Rock/Paper/Scissors
+
+Write a terminal based rock, paper, scissors game. You must use at least one class in your implementation.
